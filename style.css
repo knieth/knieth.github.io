@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+button{
+    cursor: pointer;
+}
+
+nav{
+    display:flex;
+    list-style-type: none;
+    padding: 1.1em .5em 1em 15em;
+    background:#f2f2f2;
+    position: fixed;
+    width:100%;
+    bottom:0;
+}
+
+nav li {
+    padding:1em 2em 1em 2em;
+    font-size:.75rem;
+}
+
+nav li a{
+    text-decoration: none;
+    color:#808185;
+}
+.line{
+    padding-bottom: .25em;
+    padding-right: .75em;
+}
+
+#sidebar{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    background:#f2f2f2;
+    z-index: 1;   
+    
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo{
+    margin-top:1em;
+}
+
+#logo img{
+    width:2.75em;
+}
+
+#social{
+    transform: translateY(5em);
+}
+
+#social li {
+    list-style-type: none;
+    padding:.5em;
+    transition: .5s ease-in-out;
+}
+
+.social-icons{
+    width:1.75em;
+}
+
+.vertical-line{
+    padding-left:.80em;
+}
+
+.mail{
+    background-color: #38D39F;
+    padding:1.25em;
+    margin-top:5em;
+}
+.mail img{
+    width:1.75em;
+}
+
+#hero{
+    background: url("img/hero-01.svg") center no-repeat;
+    background-size: cover;
+    height:100vh;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headline{
+    font-size: 3rem;
+    margin:.25em 0 .25em 0;
+}
+
+.sub{
+    font-size: 2.25rem;
+}
+
+.desc{
+    margin: 3em 0 6em 0;
+    color:#BDBDBD;
+    background-color: rgba(0,0,0,0.3);
+    padding:1em 1.5em 1em 1.5em;
+    font-size: .70rem;
+    letter-spacing: .15em;
+    width:27em;
+}
+.cta{
+    
+    background-color: #38D39F;
+    text-decoration: none;
+    color:#ffffff;
+    padding:1.5em 3em 1.5em 3em;
+    font-size: .75rem;
+    border-radius:2px;
+    font-weight: bold;
+    letter-spacing: .15em;
+    border:none;
+}
+.section-container{
+    padding:5em 2em 5em 2em;
+    border-bottom: 1px solid #e0e0e0;
+}
+#about{
+    display:flex;
+    
+}
+.illustration{
+    width:45%;
+}
+.container{
+    margin:4em 1em 4em 4em;
+}
+.context-container{
+    padding:1em 0em 1em 2em;
+}
+.context-container h1{
+    font-size:1.75rem;
+    color:#3F3D56;
+}
+.context-container p{
+    margin:2em 0 2em 0;
+    color:#828282;
+    font-size:1rem;
+    padding-right:3em;
+}
+.highlight{
+    color:#38D39F !important;
+}
+.bold-highlight{
+    font-weight: bold;
+    color:#38D39F !important;
+}
+
+.field-container{
+    display:flex;
+}
+.field-container div{
+    display:flex;
+    margin:2em 0 4.5em 0;
+}
+.field-container div img{
+    width:2em;
+}
+.field-container div p{
+    font-size:.75rem;
+    padding-left:1em;
+}
+#skills{
+    display:flex; 
+}
+#projects{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#projects .context-container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#projects .context-container p{
+    padding:0; 
+}
+.project-container{
+    display:flex;
+    margin-left:1em;
+}
+
+.project-tiles{
+    background-color:#F2F2F2;
+    margin:1em;
+    padding:2em 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-tiles div{
+    background-color: #333333;
+    width:100%;
+    text-align:center;
+    padding:1em;
+}
+
+.project-tiles div p:first-of-type{
+    color:#BDBDBD;
+    font-size:.75rem;
+    font-weight: 500;
+    margin:0 0 .75em 0;
+}
+
+.project-tiles div p{
+    color:#828282;
+    font-size:.6rem;
+}
+
+.project-container img{
+    width:15em;
+    padding:0 .75em 2em .75em;
+}
+
+#contact{
+
+}
+.contact-container{
+    display:flex;
+}
+
+.contact-container div{
+    display:flex;
+}
+
+.contact-container div div{
+    display:flex;
+    flex-direction: column;
+}
+
+.contact-container div div p{
+    margin:.5em 0 .5em 1em;
+}
+
+.contact-container div div p:nth-of-type(2){
+    color:#333333;
+    font-weight: 500;
+}
+
+.link:hover{
+    color:#38D39F;
+}
+.social-link:hover{
+    transform:scale(1.1);
+    border:1px solid #38D39F;
+}
