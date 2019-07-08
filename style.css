@@ -12,16 +12,16 @@ button{
 
 nav{
     display:flex;
+    justify-content: flex-end;
+    position:fixed;
     list-style-type: none;
-    padding: 1.1em .5em 1em 15em;
     background:#f2f2f2;
-    position: fixed;
     width:100%;
-    bottom:0;
+    padding:0 10% 0 10%;
 }
 
 nav li {
-    padding:1em 2em 1em 2em;
+    padding:25px;
     font-size:.75rem;
 }
 
@@ -41,31 +41,26 @@ nav li a{
     position: fixed;
     background:#f2f2f2;
     z-index: 1;   
-    
     align-items: center;
     justify-content: space-between;
 }
 
 #logo{
-    margin-top:1em;
+    margin-top:20px;
 }
 
 #logo img{
-    width:2.75em;
-}
-
-#social{
-    transform: translateY(5em);
+    height:48px;
 }
 
 #social li {
     list-style-type: none;
-    padding:.5em;
+    padding:10px;
     transition: .5s ease-in-out;
 }
 
 .social-icons{
-    width:1.75em;
+    width:30px;
 }
 
 .vertical-line{
@@ -74,11 +69,10 @@ nav li a{
 
 .mail{
     background-color: #38D39F;
-    padding:1.25em;
-    margin-top:5em;
+    padding:20px;
 }
 .mail img{
-    width:1.75em;
+    width:25px;
 }
 
 #hero{
@@ -87,13 +81,13 @@ nav li a{
     height:100vh;
     color:white;
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
 .headline{
     font-size: 3rem;
-    margin:.25em 0 .25em 0;
 }
 
 .sub{
@@ -107,10 +101,9 @@ nav li a{
     padding:1em 1.5em 1em 1.5em;
     font-size: .70rem;
     letter-spacing: .15em;
-    width:27em;
-}
-.cta{
     
+}
+.cta{ 
     background-color: #38D39F;
     text-decoration: none;
     color:#ffffff;
@@ -133,7 +126,8 @@ nav li a{
     width:45%;
 }
 .container{
-    margin:4em 1em 4em 4em;
+    width:90%;
+    margin:auto;
 }
 .context-container{
     padding:1em 0em 1em 2em;
@@ -254,4 +248,69 @@ nav li a{
 .social-link:hover{
     transform:scale(1.1);
     border:1px solid #38D39F;
+}
+
+@media screen and (max-width:1024px){
+    nav{
+        justify-content: center;
+    }
+    nav li {
+        padding:20px;
+        font-size:.5rem;
+    }
+    .headline{
+        font-size: 2rem;
+    }
+    .sub{
+        font-size: 1.5rem;
+    }
+    .desc{
+        margin: 3em 0 3em 0;
+        font-size: .5rem;
+    }
+    #about{
+        flex-direction: column;
+        align-items: center;
+    }
+    .illustration{
+        width:100%;
+    }
+    .context-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+    .context-container h1{
+        font-size:1.75rem;
+        color:#3F3D56;
+    }
+    .context-container p{
+        margin:2em 0 2em 0;
+        color:#828282;
+        font-size:.9rem;
+        padding:0;
+        line-height: 1.5;
+    }
+    .field-container{
+        flex-direction: column;
+        margin:1em 0 2em 0;
+    }
+    .field-container div{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin:0 0 .5em 0;
+    }
+    .field-container div p{
+        font-size:.75rem;
+        padding:0;
+        margin-top:1em;
+    }
+    #sidebar{
+        display:none;
+    }
+   
+    
 }
