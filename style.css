@@ -3,7 +3,6 @@
 *{
     padding:0;
     margin:0;
-    box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 button{
@@ -17,7 +16,6 @@ nav{
     list-style-type: none;
     background:#f2f2f2;
     width:100%;
-    padding:0 10% 0 10%;
 }
 
 nav li {
@@ -192,10 +190,11 @@ nav li a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .project-tiles div{
     background-color: #333333;
-    width:100%;
+    width:90%;
     text-align:center;
     padding:1em;
 }
@@ -222,10 +221,12 @@ nav li a{
 }
 .contact-container{
     display:flex;
+    
 }
 
 .contact-container div{
     display:flex;
+    
 }
 
 .contact-container div div{
@@ -249,11 +250,15 @@ nav li a{
     transform:scale(1.1);
     border:1px solid #38D39F;
 }
+footer{
+    background-color:#2B2C30;
+    color:#808185;
+    font-size: .75rem;
+    padding:1.5em 0 1.5em 15%;
+}
 
 @media screen and (max-width:1024px){
-    nav{
-        justify-content: center;
-    }
+    
     nav li {
         padding:20px;
         font-size:.5rem;
@@ -273,7 +278,7 @@ nav li a{
         align-items: center;
     }
     .illustration{
-        width:100%;
+        width:60%;
     }
     .context-container{
         display:flex;
@@ -308,9 +313,30 @@ nav li a{
         padding:0;
         margin-top:1em;
     }
-    #sidebar{
-        display:none;
+    #skills{
+        flex-direction: column; 
+        align-items: center;
     }
-   
+    .project-container{
+        flex-direction: column;
+        
+    }
+    .contact-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-container div{
+        flex-direction: column;
+        margin-bottom:15px;
+        align-items: center;
+    }
+    .contact-container div div p{
+        margin:.5em 0 0 1em;
+    }
+    footer{
+        padding:1.5em 0 1.5em 0;
+        text-align:center;
+    }
     
 }
