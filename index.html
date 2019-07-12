@@ -10,21 +10,21 @@
 <body>
         <nav>
             <ul class="main-nav container">
-                <li class="logo"><a href="#">Logo</a></li>
+                <li class="logo"><a href="#"><img src="img/logo-original.png" alt="Logo" class="logo"></a></li>
                 <li><a href="#work">Work</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <section id="home" class="blue cover container">
-            <h1 class="headline">NAME HERE</h1>
+            <h1 class="headline">KENNETH BUAN</h1>
             <p>I'm a Philippine based web designer & front‑end developer focused on crafting clean  & user‑friendly experiences.</p>
             <button class="cta">CHECK MY WORK</button>
         </section>
         <section id="work">
             <div class="container grid-header center container-padding dark-text">
                 <h2>PORTFOLIO</h2> 
-                <p>Below you can see some projects I've been working on lately. I divide each project into four follow-up areas: comprehensive research, wireframing, design & development. This process allows me to create great product with client goals in mind.</p>
+                <p>Below you can see some projects I've been working on lately.</p>
             </div>
             <div class="grid-wrapper container container-padding relative">
                 <div class="box">
@@ -80,7 +80,7 @@
                     SOMETHING GREAT</h2>
             <p>If you like my work and have some cool project to work on, 
                 just send me direct message or contact me through social sites listed below.</p>
-            <button class="cta">GET IN TOUCH</button>
+            <button id="get-in-touch" class="cta">GET IN TOUCH</button>
             <div class="margin-top">
                 <a href="" ><img class="small-icon" src="img/facebook-light.svg" alt="facebook"></a> 
                 <a href=""><img class="small-icon" src="img/instagram-light.svg" alt="instagram"></a>
@@ -88,8 +88,18 @@
                 <a href=""><img class="small-icon" src="img/github-light.svg" alt="github"></a>
             </div>
         </section>
+        <div class="contact-container container-padding">
+            <form method="POST" class="center form-container" action="https://formspree.io/buanxneth@gmail.com">
+                <h2 class="dark-text">Contact Me</h2>
+                <input class="input-text" type="text" name="name" placeholder="Name">
+                <input class="input-text" type="email" name="_replyto" placeholder="Email Address">
+                <textarea class="text-area" name="message" placeholder="Your Message"></textarea>
+                <button type="submit" class="cta-accent">Send Over</button>
+              </form>
+        </div>
     <footer>
             © 2019 NAME HERE . MADE IN PHILIPPINES
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
