@@ -4,8 +4,9 @@ const contactClose = document.querySelector(".close");
 
 getInTouchBtn.addEventListener("click", () => {
     contactContainer.classList.toggle("enable");
+    scrollWin();
 });
 
-contactClose.addEventListener("click", () => {
-    contactContainer.classList.toggle("enable");
-});
+function scrollWin() {
+    window.scrollBy(0,500);
+}
