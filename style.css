@@ -15,7 +15,7 @@ p{
     line-height: 2;
 }
 .logo{
-    height:42px;
+    height:40px;
 }
 .container{
     padding:0 5% 0 5%;
@@ -47,6 +47,7 @@ p{
     background: url("img/hero-01.svg") no-repeat center;
     background-size:cover;
     text-align:center;
+    z-index: 5;
 }
 .headline{
     font-size: 2.75em;
@@ -143,13 +144,14 @@ h2{
     margin-top:3em;
 }
 .overlay{
+    display:none;
     position:absolute;
     width:100%;
     height: 0%;
     top:5%;
     left: 0;
     right: 0;
-    transition: .5s ease-in-out;
+    transition: 1s ease-in-out;
     opacity:0;
     background-color:white;
     border-radius:5px;
@@ -158,6 +160,7 @@ h2{
 .box:hover .overlay{
     opacity:.9;
     height:100%;
+    display:block;
 }
 .box img{
     transition: .5s ease-in-out;
@@ -181,14 +184,12 @@ footer{
     margin:0 0 1em 0em;
     width:100%;
     border: 1px solid #BDBDBD;
-    border-radius: 4px;
 }
 .text-area{
     width:100%;
     height:15vh;
     padding:1em;
     border: 1px solid #BDBDBD;
-    border-radius: 4px;
     box-shadow: 0;
 }
 .form-container{
@@ -201,8 +202,9 @@ footer{
 .enable{
     display:inherit;
 }
-.close{
-    position:relative;
-    left:100%;
-    cursor:pointer;
+.scale-up{
+    transition:.25s all ease-in-out;
+}
+.scale-up:hover{
+    transform: scale(1.1);
 }
