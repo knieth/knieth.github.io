@@ -1,126 +1,194 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Kenneth Buan</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="/css/style.css" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
 </head>
 <body>
-        <nav>
-            <ul class="main-nav container">
-                <li class="logo"><a href="#"><img src="img/logo-original.png" alt="Logo" class="logo"></a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <section id="home" class="blue cover container">
-            <h1 class="headline">KENNETH BUAN</h1>
-            <p>I'm a Philippine based web designer & front‑end developer focused on crafting clean  & user‑friendly experiences.</p>
-            <div class="margin-top">
-                <a href="https://www.facebook.com/kneth.buan" target="_blank"><img class="small-icon scale-up" src="img/facebook-light.svg" alt="facebook"></a> 
-                <a href="https://www.instagram.com/knethbuan/" target="_blank"><img class="small-icon scale-up" src="img/instagram-light.svg" alt="instagram"></a>
-                <a href="https://www.linkedin.com/in/kenneth-buan/" target="_blank"><img class="small-icon scale-up" src="img/linkedin-light.svg" alt="linkedin"></a>
-                <a href="https://github.com/knieth" target="_blank"><img class="small-icon scale-up" src="img/github-light.svg" alt="github"></a>
+    <nav class="bg-[#f2f2f2] py-2">
+        <ul class="flex text-sm space-x-6 text-gray-500 font-medium items-center container px-4 lg:px-12 mx-auto">
+            <li class="mr-auto"><a href="#">
+                <img src="img/logo-original.png" alt="Logo" class="h-12"></a>
+            </li>
+            <li class="hover:text-gray-900">
+                <a href="#work">Work</a>
+            </li>
+            <li class="hover:text-gray-900">
+                <a href="#about">About</a>
+            </li>
+            <li class="hover:text-gray-900">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <section id="home" class="text-center px-4 lg:px-12 flex flex-col items-center justify-center text-white z-5 h-[97vh] bg-[url('/img/hero-01.svg')] bg-no-repeat bg-cover bg-center">
+        <h1 class="font-bold text-5xl">
+            KENNETH BUAN
+        </h1>
+        <p class="mt-4">
+            I'm a Philippine based Frontend Web Developer focused on crafting clean & user‑friendly experiences.
+        </p>
+        <div class="mt-12 grid grid-cols-3 gap-4">
+            <!--
+            <a href="https://www.facebook.com/kneth.buan" target="_blank">
+                <img class="w-10 transition-all hover:scale-125" src="img/facebook-light.svg" alt="facebook">
+            </a> 
+            -->
+            <a href="https://www.linkedin.com/in/kenneth-buan/" target="_blank">
+                <img class="w-10 transition-all hover:scale-125" src="img/linkedin-light.svg" alt="linkedin">
+            </a>
+            <a href="https://github.com/knieth" target="_blank">
+                <img class="w-10 transition-all hover:scale-125" src="img/github-light.svg" alt="github">
+            </a>
+            <a href="https://www.instagram.com/knethbuan/" target="_blank">
+                <img class="w-10 transition-all hover:scale-125" src="img/instagram-light.svg" alt="instagram">
+            </a>
+        </div>
+        <a class="mt-10 px-8 py-3 border-2 rounded-sm text-white border-white transition-all duration-500 hover:bg-white hover:text-[#333333]" href="#work">
+            CHECK MY WORK
+        </a>
+    </section>
+    <section id="work">
+        <div class="bg-[#f2f2f2] py-20 text-[#4f4f4f]">
+            <div class="container text-center mx-auto">
+                <h2 class="font-bold text-3xl">PORTFOLIO</h2> 
+                <p class="mt-6">Below you can see some projects I've been working on lately.</p>
             </div>
-            <a class="cta" href="#work">CHECK MY WORK</a>
-        </section>
-        <section id="work">
-            <div class="container grid-header center container-padding dark-text">
-                <h2>PORTFOLIO</h2> 
-                <p>Below you can see some projects I've been working on lately.</p>
-            </div>
-            <div class="grid-wrapper container container-padding relative">
-                <div class="box">
-                    <img src="img/potfolio items-01.png" alt="">
-                    <div class="overlay">
-                        <div class="box-text-content center dark-text medium-font-size">
-                           <h2>Crescent Tracker</h2>
-                           <p class="description">Tracks assigned book shipping status anytime</p>
-                           <p class="category">Web Design | Web Development</p>
-                           <a class="cta-accent" href="https://knieth.github.io/Crescent-Tracker/" target="_blank">SEE IT ONLINE</a> 
-                        </div>
-                    </div>
-                </div> 
-                <div class="box">
-                    <img src="img/potfolio items-03.png" alt="">
-                    <div class="overlay">
-                        <div class="box-text-content center dark-text medium-font-size">
-                            <h2>Gibbous</h2>
-                            <p class="description">Website mockup project</p>
-                            <p class="category">Web Design | UI Design</p>
-                            <a class="cta-accent" href="https://knieth.github.io/Gibbous/" target="_blank">SEE IT ONLINE</a> 
-                        </div>
-                    </div>
-                </div> 
-                <div class="box">
-                    <img src="img/potfolio items-04.png" alt="">
-                    <div class="overlay">
-                        <div class="box-text-content center dark-text medium-font-size">
-                            <h2>3FORSIDE</h2>
-                            <p class="description">Clothing line website project</p>
-                            <p class="category">Web Design | UI Design</p>
-                            <a class="cta-accent" href="https://knieth.github.io/3FORSIDE/" target="_blank">SEE IT ONLINE</a>  
-                        </div>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-3 mx-auto py-20 px-4 lg:px-12 container">
+            <div class="cursor-pointer p-12 transition-all hover:scale-110 duration-500 ease-in-out group">
+                <img class="transition-all w-full" src="img/potfolio items-01.png" alt="">
+                <div class="transition-all absolute h-0 inset-0 bg-white rounded-sm z-0 hidden group-hover:h-full group-hover:opacity-[.95] group-hover:flex flex-col items-center justify-center">
+                    <div class="text-sm flex flex-col items-center justify-center text-center text-[#4f4f4f]">
+                        <h2 class="font-bold text-lg">Crescent Tracker</h2>
+                        <p class="mt-4 text-xs font-medium">Tracks assigned book shipping status anytime</p>
+                        <p class="mt-2 text-xs text-[#828282]">Web Design | Web Development</p>
+                        <a class="mt-6 px-6 py-2 border-2 rounded-sm text-[#EB5757] border-[#EB5757] transition-all duration-500 hover:bg-[#EB5757] hover:text-white" href="https://knieth.github.io/Crescent-Tracker/" target="_blank">
+                            SEE IT ONLINE
+                        </a> 
                     </div>
                 </div>
-                <div class="box">
-                    <img src="img/potfolio items-02.png" alt="">
-                    <div class="overlay">
-                        <div class="box-text-content center dark-text medium-font-size">
-                            <h2>Gradient Background Generator</h2>
-                            <p class="description">Choose and Generate Gradient Background</p>
-                            <p class="category">Web Design | Web Development</p>
-                            <a class="cta-accent" href="https://knieth.github.io/Background-Generator/" target="_blank">SEE IT ONLINE</a>
-                        </div>
+            </div>
+            <div class="cursor-pointer p-12 transition-all hover:scale-110 duration-500 ease-in-out group">
+                <img class="transition-all w-full" src="img/potfolio items-04.png" alt="">
+                <div class="transition-all absolute h-0 inset-0 bg-white rounded-sm z-0 hidden group-hover:h-full group-hover:opacity-[.95] group-hover:flex flex-col items-center justify-center">
+                    <div class="text-sm flex flex-col items-center justify-center text-center text-[#4f4f4f]">
+                        <h2 class="font-bold text-lg">3FORSIDE</h2>
+                        <p class="mt-4 text-xs font-medium">Clothing line website project</p>
+                        <p class="mt-2 text-xs text-[#828282]">Web Design | UI Design</p>
+                        <a class="mt-6 px-6 py-2 border-2 rounded-sm text-[#EB5757] border-[#EB5757] transition-all duration-500 hover:bg-[#EB5757] hover:text-white" href="https://knieth.github.io/3FORSIDE/" target="_blank">
+                            SEE IT ONLINE
+                        </a> 
                     </div>
                 </div>
-                <div class="box">
-                    <img src="img/potfolio items-06.png" alt="">
-                    <div class="overlay">
-                        <div class="box-text-content center dark-text medium-font-size">
-                            <h2>FOB Tracker</h2>
-                            <p class="description">Support broader realtime tracking of books assign to FOB team.</p>
-                            <p class="category">Web Design | Web Development</p>
-                            <a class="cta-accent" href="https://knieth.github.io/FOB-Tracker/" target="_blank">SEE IT ONLINE</a>
-                        </div>
+            </div>
+            <div class="cursor-pointer p-12 transition-all hover:scale-110 duration-500 ease-in-out group">
+                <img class="transition-all w-full" src="img/potfolio items-03.png" alt="">
+                <div class="transition-all absolute h-0 inset-0 bg-white rounded-sm z-0 hidden group-hover:h-full group-hover:opacity-[.95] group-hover:flex flex-col items-center justify-center">
+                    <div class="text-sm flex flex-col items-center justify-center text-center text-[#4f4f4f]">
+                        <h2 class="font-bold text-lg">Gibbous</h2>
+                        <p class="mt-4 text-xs font-medium">Website mockup project</p>
+                        <p class="mt-2 text-xs text-[#828282]">Web Design | UI Design</p>
+                        <a class="mt-6 px-6 py-2 border-2 rounded-sm text-[#EB5757] border-[#EB5757] transition-all duration-500 hover:bg-[#EB5757] hover:text-white" href="https://knieth.github.io/Gibbous/" target="_blank">
+                            SEE IT ONLINE
+                        </a> 
                     </div>
-                </div>    
+                </div>
             </div>
-        </section >
-        <section id="about" class="center container container-padding light-text secondary-bg">
-            <h2>ABOUT ME</h2>
-            <p>I'm web designer & front-end developer with 2 years of professional experience. 
-                I'm interested in all kinds of visual communication, but my major focus is on designing web, mobile & tablet interfaces. 
-                I also have skills in other fields like branding, icon design or web development. I do 3d modelling as my other hobby.</p>
-        </section>
-        <section id="contact" class="primary-bg light-text center container container-padding" >
-            <h2>OK, LET’S CREATE <br>
-                    SOMETHING GREAT</h2>
-            <p>If you like my work and have some cool project to work on, 
-                just send me direct message or contact me through social sites listed below.</p>
-            <button id="get-in-touch" class="cta">GET IN TOUCH</button>
-            <div class="margin-top">
-                <a class="scale-up" href="https://www.facebook.com/kneth.buan" target="_blank"><img class="small-icon scale-up" src="img/facebook-light.svg" alt="facebook"></a> 
-                <a class="scale-up" href="https://www.instagram.com/knethbuan/" target="_blank"><img class="small-icon scale-up" src="img/instagram-light.svg" alt="instagram"></a>
-                <a class="scale-up" href="https://www.linkedin.com/in/kenneth-buan/" target="_blank"><img class="small-icon scale-up" src="img/linkedin-light.svg" alt="linkedin"></a>
-                <a class="scale-up" href="https://github.com/knieth" target="_blank"><img class="small-icon scale-up" src="img/github-light.svg" alt="github"></a>
+            <div class="cursor-pointer p-12 transition-all hover:scale-110 duration-500 ease-in-out group">
+                <img class="transition-all w-full" src="img/potfolio items-06.png" alt="">
+                <div class="transition-all absolute h-0 inset-0 bg-white rounded-sm z-0 hidden group-hover:h-full group-hover:opacity-[.95] group-hover:flex flex-col items-center justify-center">
+                    <div class="px-16 text-sm flex flex-col items-center justify-center text-center text-[#4f4f4f]">
+                        <h2 class="font-bold text-lg">FOB Tracker</h2>
+                        <p class="mt-4 text-xs font-medium">Support broader realtime tracking of books assign to FOB team.</p>
+                        <p class="mt-2 text-xs text-[#828282]">Web Design | Web Development</p>
+                        <a class="mt-6 px-6 py-2 border-2 rounded-sm text-[#EB5757] border-[#EB5757] transition-all duration-500 hover:bg-[#EB5757] hover:text-white" href="https://knieth.github.io/Background-Generator/" target="_blank">
+                            SEE IT ONLINE
+                        </a> 
+                    </div>
+                </div>
+            </div> 
+            <div class="cursor-pointer p-12 transition-all hover:scale-110 duration-500 ease-in-out group">
+                <img class="transition-all w-full" src="img/potfolio items-02.png" alt="">
+                <div class="transition-all absolute h-0 inset-0 bg-white rounded-sm z-0 hidden group-hover:h-full group-hover:opacity-[.95] group-hover:flex flex-col items-center justify-center">
+                    <div class="text-sm flex flex-col items-center justify-center text-center text-[#4f4f4f]">
+                        <h2 class="font-bold text-lg">Gradient Background Generator</h2>
+                        <p class="mt-4 text-xs font-medium">Choose and Generate Gradient Background</p>
+                        <p class="mt-2 text-xs text-[#828282]">Web Design | Web Development</p>
+                        <a class="mt-6 px-6 py-2 border-2 rounded-sm text-[#EB5757] border-[#EB5757] transition-all duration-500 hover:bg-[#EB5757] hover:text-white" href="https://knieth.github.io/Background-Generator/" target="_blank">
+                            SEE IT ONLINE
+                        </a> 
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </section>
+    <section id="about" class="text-center text-[#E0E0E0] bg-[#007F73]">
+        <div class="container mx-auto py-20 px-4 lg:px-12">
+            <h2 class="font-bold text-3xl">ABOUT ME</h2>
+            <div class="mt-6 max-w-4xl mx-auto">
+                <p class="leading-loose">
+                    I'm a Frontend Web Developer with 2 years of professional experience. 
+                    I'm interested in all kinds of visual communication, but my major focus is on building web, mobile & tablet interface layouts. 
+                    I also have skills in other fields like branding, icon design or web development. I do 3d modelling as my other hobby.
+                </p>
             </div>
-        </section>
-        <div class="contact-container container-padding">
-            <form method="POST" class="center form-container" action="https://formspree.io/buanxneth@gmail.com">
-                <h2 class="dark-text">CONTACT ME</h2>
+        </div>
+    </section>
+    <section id="contact" class="text-center bg-[#EB5757] text-[#E0E0E0]">
+        <div class="container mx-auto py-20 px-4 lg:px-12 flex flex-col items-center justify-center">
+            <h2 class="font-bold text-3xl">
+                OK, LET’S CREATE <br>
+                SOMETHING GREAT
+            </h2>
+            <div class="mt-6 max-w-4xl mx-auto flex flex-col items-center justify-center">
+                <p>
+                    If you like my work and have some cool project to work on, 
+                    just send me direct message or contact me through social sites listed below.
+                </p>
+                <button id="get-in-touch" class="mt-10 px-8 py-3 border-2 rounded-sm text-white border-white transition-all duration-500 hover:bg-white hover:text-[#333333]">GET IN TOUCH</button>
+                <div class="mt-12 grid grid-cols-3 gap-4">
+                    <!--
+                    <a href="https://www.facebook.com/kneth.buan" target="_blank">
+                        <img class="w-10 transition-all hover:scale-125" src="img/facebook-light.svg" alt="facebook">
+                    </a> 
+                    -->
+                    <a href="https://www.linkedin.com/in/kenneth-buan/" target="_blank">
+                        <img class="w-10 transition-all hover:scale-125" src="img/linkedin-light.svg" alt="linkedin">
+                    </a>
+                    <a href="https://github.com/knieth" target="_blank">
+                        <img class="w-10 transition-all hover:scale-125" src="img/github-light.svg" alt="github">
+                    </a>
+                    <a href="https://www.instagram.com/knethbuan/" target="_blank">
+                        <img class="w-10 transition-all hover:scale-125" src="img/instagram-light.svg" alt="instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="hidden contact-container container mx-auto py-20 px-4 lg:px-12">
+        <div class="max-w-4xl mx-auto flex flex-col items-center justify-center">
+            <form method="POST" class="text-center" action="https://formspree.io/f/mknylpjr">
+                <h2 class="mb-6 font-bold text-3xl text-[#4F4F4F]">
+                    CONTACT ME
+                </h2>
                 <input class="input-text" type="text" name="name" placeholder="Name">
                 <input class="input-text" type="email" name="_replyto" placeholder="Email Address">
                 <textarea class="text-area" name="message" placeholder="Your Message"></textarea>
-                <button type="submit" class="cta-accent">Send Over</button>
-              </form>
+                <button type="submit" class="mt-6 px-6 py-2 border-2 rounded-sm text-[#EB5757] border-[#EB5757] transition-all duration-500 hover:bg-[#EB5757] hover:text-white">Send Over</button>
+            </form>
         </div>
-    <footer>
-            © 2019 Kenneth Buan . MADE IN PHILIPPINES
+    </div>
+    <footer class="bg-[#333333] text-[#828282] text-center p-6 text-xs">
+        © <script>document.write(new Date().getFullYear())</script> KENNETH BUAN . MADE IN PHILIPPINES
     </footer>
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
